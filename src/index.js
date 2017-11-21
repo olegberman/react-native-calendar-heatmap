@@ -8,7 +8,7 @@ import { shiftDate, getBeginningTimeForDate, convertToDate } from './dateHelpers
 
 const SQUARE_SIZE = 20;
 const MONTH_LABEL_GUTTER_SIZE = 8;
-const rectColor = ['#eeeeee','#d6e685', '#8cc665', '#44a340', '#1e6823']
+const rectColor = ['rgba(255, 255, 255, 0.1)','rgba(255, 255, 255, 0.3)', 'rgba(255, 255, 255, 0.4)', 'rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0.6)']
 
 export class CalendarHeatmap extends React.Component {
   constructor(props) {
@@ -237,7 +237,7 @@ export class CalendarHeatmap extends React.Component {
   render() {
     return (
         <Svg
-          height={this.getHeight()} 
+          height={this.getHeight()}
           width={this.getWidth()}
         >
           <Svg.G>
